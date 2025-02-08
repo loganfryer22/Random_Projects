@@ -62,3 +62,5 @@ def check_and_update():
                 pass # Replace with restart logic if needed.
             else:
                 print("Update failed.  Please check the logs.")
+
+check_and_update()
