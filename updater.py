@@ -38,7 +38,7 @@ def check_and_update():
             try:
                 remote_version = remote_version_code.split('__version__ = ')[1].strip().replace('"', '').replace("'", "")
             except IndexError:
-                print("Could not parse remote version. Check version.py on GitHub.")
+                print(f"Could not parse remote version. Check version.py on GitHub; URL = {url}")
                 return None
 
             if remote_version != __version__:
